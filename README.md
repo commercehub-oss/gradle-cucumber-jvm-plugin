@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/commercehub-oss/gradle-cucumber-jvm-plugin.png?branch=master)](https://travis-ci.org/commercehub-oss/gradle-cucumber-jvm-plugin)
 
 The gradle cucumber-jvm plugin provides the ability to run [cucumber](http://cukes.info) acceptance tests directly
-from a gradle build.  The plugin utilizes the cucumber cli provided by the [cucumber-jvm](https://github.com/cucumber/cucumber-jvm) 
+from a gradle build.  The plugin utilizes the cucumber cli provided by the [cucumber-jvm](https://github.com/cucumber/cucumber-jvm)
 project, while imposing a few constraints to encourage adopters to use cucumber in a gradle friendly manner. Some of
 constraints include:
 
@@ -12,9 +12,11 @@ constraints include:
 * Features should be in the resources folder of the source set representing the test suite.
 * This plugin generates Cucumber reports based on [masterthought's Cucumber reporting project](https://github.com/masterthought/cucumber-reporting).
 
-The inspiration for this plugin drew heavily from the work of 
-[Samuel Brown's Cucumber Plugin](https://github.com/samueltbrown/gradle-cucumber-plugin) and 
+The inspiration for this plugin drew heavily from the work of
+[Samuel Brown's Cucumber Plugin](https://github.com/samueltbrown/gradle-cucumber-plugin) and
 [Camilo Ribeiro's Cucumber Gradle Parallel Example](https://github.com/camiloribeiro/cucumber-gradle-parallel).
+
+> See [our security policy](SECURITY.md) for handling of security-related matters.
 
 ## Contributors
 
@@ -22,7 +24,7 @@ The inspiration for this plugin drew heavily from the work of
 
 ## Using the plugin in your gradle build script
 
-The following gradle configuration will create a new Cucumber based test suite named `cucumberTest` and configure it 
+The following gradle configuration will create a new Cucumber based test suite named `cucumberTest` and configure it
 to run up to 3 parallel forks. The `cucumberTest` source set will depend on the project's main source set.
 
 ```groovy
@@ -44,9 +46,9 @@ plugins {
     id 'com.commercehub.cucumber-jvm' version '0.7'
 }
 
-  
+
 addCucumberSuite 'cucumberTest'
-  
+
 cucumber {
     maxParallelForks = 3
 }
@@ -141,6 +143,6 @@ property values form the project defaults. Both levels of configuration make the
 
 ### Reporting
 
-By default, this plugin will generate reports based on [masterthought's Cucumber reporting project](https://github.com/masterthought/cucumber-reporting). 
+By default, this plugin will generate reports based on [masterthought's Cucumber reporting project](https://github.com/masterthought/cucumber-reporting).
 
-JUnit reporting can be enabled by setting the `junitReport` property to `true`. 
+JUnit reporting can be enabled by setting the `junitReport` property to `true`.
