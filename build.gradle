@@ -1,6 +1,6 @@
 plugins {
     id 'groovy'
-    id 'codenarc'
+    // id 'codenarc'
     id 'net.saliman.cobertura' version '2.2.8'
     id 'idea'
     id 'maven-publish'
@@ -42,10 +42,10 @@ sourceSets {
     }
 }
 
-codenarc {
-    configFile = rootProject.file('codenarcrule.groovy')
-    reportFormat = System.properties['codeNarcOutput'] ?: 'html'
-}
+//codenarc {
+//    configFile = rootProject.file('codenarcrule.groovy')
+//    reportFormat = System.properties['codeNarcOutput'] ?: 'html'
+//}
 
 cobertura {
     coverageIgnoreTrivial = true
