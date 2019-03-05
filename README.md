@@ -1,3 +1,7 @@
+# THIS PROJECT IS DEPRECATED
+
+Gradle Cucumber-JVM Plugin is no longer maintained, and **this** repository will be removed from GitHub on or after March 5, 2021. Published release artifacts will **continue** to be available indefinitely via the Gradle Plugin Portal.
+
 # Gradle Cucumber-JVM Plugin
 
 [![Build Status](https://travis-ci.org/commercehub-oss/gradle-cucumber-jvm-plugin.png?branch=master)](https://travis-ci.org/commercehub-oss/gradle-cucumber-jvm-plugin)
